@@ -1,0 +1,166 @@
+.navbar {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+
+    .menu_navber {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+
+        .logo-container {
+            overflow: hidden;
+
+            a {
+                text-decoration: none;
+            }
+
+            .logo {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+                text-decoration: none;
+                align-items: center;
+
+                img {
+                    height: 40px;
+                    width: 40px;
+                }
+
+                p {
+                    font-size: 25px;
+                    font-weight: 700;
+                    padding-left: 10px;
+                    display: flex;
+                    align-items: center;
+                    color: black;
+                }
+            }
+        }
+
+        .navLinks {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            right: 10px;
+
+            // button {
+            //     border: 1px solid;
+            //     border-radius: 5px;
+            //     padding: 5px 10px;
+            //     background: none;
+            //     color: #0e86d4;
+            //     margin-right: 10px;
+            //     transition: 0.2S;
+            //     font-weight: 600;
+            //     cursor: pointer;
+            // }
+
+            // button:hover {
+            //     transform: scale(1.10);
+            //     background: #0e86d4;
+            //     color: #fff;
+            // }
+
+
+            .callButton {
+                background-color: #fdca18;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                transition: ease 0.5s;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                position: relative;
+
+                img {
+                    margin-left: 5px;
+                    height: 20px;
+                    width: 20px;
+                    transition: transform 0.5s ease;
+                }
+
+                a {
+                    white-space: nowrap;
+                    color: white;
+                    font-size: 13px;
+                    padding-left: 7px;
+                    padding-right: 3px;
+                    font-weight: 400;
+                    opacity: 0;
+                    transform: translate(-100%);
+                    transition: all 0.5s ease;
+                }
+
+                &:hover {
+                    width: 120px;
+                    border-radius: 15px;
+                    transition: all 0.5s ease;
+
+                    a {
+                        opacity: 1;
+                        transform: translate(0);
+                        text-decoration: none;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+
+                    img {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+
+
+            .navText {
+                font-size: 16px;
+                padding-left: 15px;
+                padding-right: 15px;
+                cursor: pointer;
+                transition: 0.2S;
+                transform-origin: center;
+                color: black;
+                text-decoration: none;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+            }
+
+            .navText:hover {
+                transform: scale(1.10);
+            }
+
+            .cngText {
+                color: #0e86d4;
+                align-items: center;
+                font-weight: 600;
+            }
+
+            .cngText span {
+                color: #eebc39;
+            }
+
+            .macText {
+                color: #39b54a;
+                font-weight: 900;
+                font-size: 25px;
+            }
+        }
+
+        .close {
+            display: none;
+
+            img {
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+}

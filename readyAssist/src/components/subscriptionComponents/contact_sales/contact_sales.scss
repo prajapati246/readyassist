@@ -1,0 +1,106 @@
+#contact_sales {
+    color: #ffffff;
+    padding: 50px 0px;
+
+    .contact_sales_section {
+        background-color: #262626;
+        position: relative;
+        overflow: hidden;
+        padding: 50px 0;
+
+        .contact_sales_bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            opacity: .4;
+            
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                z-index: -1;
+                transform: translate(-50%, -50%);
+                background-size: cover;
+                object-fit: cover;
+                object-position: center;
+                
+            }
+        }
+
+        .contact_sales_container {
+            position: relative;
+            opacity: 1 !important;
+            display: flex        ;
+            flex-direction: column;
+            align-items: center;
+            max-width: 30%;
+            justify-content: center;
+            margin: 0 auto;
+            text-align: center;
+            gap: 50px;
+            height: 60vh;
+
+            .contact_sales_h1 {
+                font-weight: 400;
+                font-size: 30px;
+            }
+
+            .contact_sales_h2 {
+                color: #00D563;
+                font-size: 14px;
+            }
+
+            .contact_sales_p {
+                font-size: 16px;
+                font-weight: 300;
+                margin-top: 50px;
+            }
+
+            .contact_sales_form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .form_container {
+                    display: flex;
+
+                    .form_group {
+                        display: flex;
+                        flex-direction: column;
+
+                        .form_input {
+                            background-color:#ffffff;
+                            padding: 10px;
+                            border: none;
+                            border-radius: 8px 0 0 8px;
+                            font-size: 16px;
+                            font-weight: 300;
+                            outline: none;
+                            width: 220px;
+                            height: 50px;
+                        }
+
+                    }
+                    .btn_submit {
+                        background-color: green;
+                        height: 50px;
+                        color: #ffffff;
+                        padding: 10px 24px;
+                        border: none;
+                        border-radius: 0 8px 8px 0;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease, color 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+}

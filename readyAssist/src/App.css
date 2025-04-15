@@ -1,0 +1,31 @@
+:root {
+  --max-width: 1250px;
+  --ra-yellow: #ffcc33;
+  --grey-black: #343a40;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --grey: #808080;
+  --green: #039747;
+  --primary_color: #ffcc33;
+  --light-yellow: #fffefc;
+  --cng_primary_color: #0e86d4;
+  --cng_secondary_color: #eebc39;
+  --inspection_Pcolor: #06278a;
+  --box-shadow-primary: 0 0 25px rgba(31, 31, 31, 0.08);
+  --christmas-theme-primary: #d5091c;
+  --christmas-theme-secondary: #f6e8e8;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}

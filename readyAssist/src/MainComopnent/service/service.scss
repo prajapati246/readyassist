@@ -1,0 +1,146 @@
+#servicesList_section {
+    left: 0;
+    bottom: 0;
+    top: 70px;
+    height: calc(100vh - 70px);
+    min-height: 100%;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    overflow: scroll;
+    z-index: 15;
+
+    .servicesList_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        height: 100%;
+        max-width: 1600px;
+        margin-inline: auto;
+        padding: 40px 50px;
+        overflow-y: scroll;
+
+        .servicesList_search {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+
+            .serviceSearchBox_parent {
+                width: 100%;
+                display: flex;
+                gap: 5px;
+                align-self: center;
+                background-color: #fff;
+                box-shadow: 0 2px 8px #6d6d6d1a;
+                border-radius: 16px;
+                padding: 10px;
+
+                img {
+                    width: 18px;
+                }
+
+                .serviceSearchBox {
+                    background-color: transparent;
+                    width: 100%;
+                    outline: none;
+                    border: none;
+                    font-size: 16px;
+                    color: black;
+                }
+            }
+        }
+
+
+        #servicesList {
+            padding-top: 30px;
+            display: flex;
+            gap: 30px;
+
+            .servicecategory {
+                width: 33.33%;
+                padding: 20px 0;
+                border-radius: 16px;
+                background-color: #fff;
+                box-shadow: 0 2px 8px #6d6d6d1a;
+
+                .servicecategory_name {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #333;
+                    padding-left: 24px;
+                }
+
+                .serviceList_category {
+                    display: flex;
+                    flex-direction: column;
+
+                    .serviceList_style {
+                        cursor: pointer;
+                        padding: 20px;
+
+                        a {
+                            display: flex;
+                            text-decoration: none;
+                            gap: 15px;
+                            align-items: center;
+                            width: 100%;
+
+                            .serviceList_icon {
+                                display: flex;
+                                align-items: center;
+
+                                img {
+                                    width: 50px;
+                                    text-align: center;
+                                }
+                            }
+
+                            .serviceList_content {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+
+                                .serviceList_name {
+                                    color: #181818;
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                }
+
+                                .serviceList_description {
+                                    color: #9ca3af;
+                                    font-size: 13px;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .serviceList_button {
+            display: flex;
+            justify-content: end;
+            align-items: end;
+
+            .serviceList_close_btn {
+                padding: 13px 35px;
+                color: white;
+                background-color: black;
+                font-size: 14px;
+                font-weight: 600;
+                border-radius: 18px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.block {
+    display: block;
+}

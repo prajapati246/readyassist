@@ -1,0 +1,57 @@
+.form {
+    display: flex;
+    flex-direction: column;
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        line-height: 0;
+
+        .error {
+            font-size: 10px;
+            color: red;
+            padding: 0 10px;
+        }
+
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    input {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 10px;
+        background-color: #033452;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+        margin-bottom: 10px;
+        text-align: right;
+    }
+
+    span {
+        color: #007bff;
+        text-decoration: none;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+
+    p {
+        text-align: center;
+    }
+}

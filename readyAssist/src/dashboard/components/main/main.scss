@@ -1,0 +1,59 @@
+main {
+    width: 100%;
+    padding: 36px 24px;
+    font-family: var(--poppins);
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+    position: relative;
+    top: 56px;
+
+    .head-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+
+        .left {
+            h1 {
+                font-size: 36px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                color: var(--dark);
+            }
+
+            .breadcrumb {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                li {
+                    color: var(--dark);
+
+                    a {
+                        color: var(--dark-grey);
+                        pointer-events: none;
+                    }
+
+                    .active {
+                        color: var(--blue);
+                        pointer-events: unset;
+                    }
+                }
+            }
+        }
+
+        .btn-download {
+            height: 36px;
+            padding: 0 16px;
+            background-color: var(--blue);
+            border-radius: 36px;
+            color: var(--light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: 500;
+        }
+    }
+}

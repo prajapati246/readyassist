@@ -1,0 +1,56 @@
+#Prime_subscription {
+    padding: 50px 0;
+
+    .Prime_section {
+        max-width: 1200px;
+
+        .Prime_section_bg {
+            background-color: #3aa46f;
+            background-image: url("../../../assets/footerbg2.svg");
+            display: flex;
+            justify-content: space-between;
+            color: #ffffff;
+            padding: 50px;
+            border-radius: 15px;
+            .Prime_section_left{
+                width: 68%;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                .Prime_section_h1{
+                    font-size: 30px;
+                    line-height: 1.2;
+                    font-weight: 500;
+                }
+                .Prime_section_p{
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 1.8;
+                }
+            }
+
+            .Prime_section_right{
+                width: 30%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .tryprime_btn{
+                    background-color: #ffffff;
+                    border-radius: 30px;
+                    padding: 15px 30px;
+                    a{
+                        background: linear-gradient(blue, red);
+                        -webkit-text-fill-color: transparent;
+                        -webkit-background-clip: text;
+                    }
+                }
+            }
+        }
+    }
+
+    .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

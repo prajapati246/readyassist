@@ -1,0 +1,203 @@
+#joinUs {
+    overflow: hidden;
+    position: relative;
+
+    #joinUsBackground {
+        z-index: -1;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+
+        .justify-center {
+            display: flex; // Ensure flex behavior
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        #backgroundSeg1 {
+            width: 100%;
+            height: 100%;
+            flex-wrap: wrap;
+            display: flex;
+            background-color: #1d242e;
+
+            .col-lg-6 {
+                width: 50%;
+                flex-shrink: 0;
+            }
+
+            .skew-1 {
+                background-color: #f6f4ee;
+                padding: 20px;
+                position: relative;
+                transform-origin: left;
+                z-index: 2;
+            }
+
+            .skew-1::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: #f6f4ee;
+                transform: skewX(-26deg);
+            }
+
+            .skew-2 {
+                background-color: transparent;
+                position: relative;
+                transform-origin: left;
+                z-index: 2;
+            }
+
+            .skew-2::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: #1d242e;
+                transform: skewX(-26deg);
+            }
+        }
+    }
+
+    #joinUsContent {
+        padding-block: 150px;
+
+        .justify-center {
+            justify-content: center;
+
+            .crop-width {
+                max-width: var(--max-width);
+                margin: auto;
+                flex-wrap: wrap;
+                display: flex;
+
+                .col-lg-5 {
+                    width: 41.66%;
+                    flex-shrink: 0;
+
+                    .weight600 {
+                        font-weight: 600;
+                    }
+
+                    #joinUs_text2 {
+                        font-size: 50px;
+                        line-height: 110%;
+                        font-weight: 700;
+                        padding-block: 20px;
+                    }
+
+                    #joinus_description {
+                        font-size: 14px;
+                        font-weight: 400;
+                        padding-block: 10px;
+                    }
+
+                    #know_more_btn {
+                        background-color: #198754;
+                        border-radius: 50px;
+                        text-decoration: none;
+                        padding: 15px;
+                        font-weight: 500;
+                        color: #fff;
+                    }
+                }
+
+                .col-lg-4 {
+                    width: 31.33%;
+                    flex-shrink: 0;
+                    overflow: hidden;
+
+                    .relative {
+                        position: relative;
+                        justify-content: center;
+                        display: flex;
+                        overflow: hidden;
+                    }
+
+                    #anim_wrapper {
+                        transition: 0.4s ease-in-out;
+                        background-color: #f17430;
+                        clip-path: polygon(36% 100%, 0% 35%, 100% 12%);
+                        width: 320px;
+                        height: 320px;
+                    }
+
+                    .absolute {
+                        position: absolute;
+
+                        img {
+                            width: 320px;
+                            height: 317px;
+                            transform: translateY(300px);
+                            transition: transform 0.5s ease-in-out !important;
+                        }
+                      img.show {
+                            transform: translateY(0px) !important;
+                        }
+                    }
+
+                }
+
+
+                .col-lg-3 {
+                    width: 25%;
+                    flex-shrink: 0;
+
+                    .text-start {
+                        p {
+                            padding-block: 10px;
+                            color: #fff;
+                            font-weight: 500;
+                        }
+
+                        .joinUsInputs{
+                            background: transparent;
+                            border: 1px solid white;
+                            width: 100%;
+                            height: 50px;
+                            color: #fff;
+                            font-weight: 500;
+                            border-radius: 8px;
+                            font-size: 16px;
+                            outline: none;
+                            padding: 10px;
+                            margin-bottom: 13px;
+                        }
+
+                        .joinus_btn{
+                            border: 0;
+                            border-radius: 30px;
+                            font-style: normal;
+                            background-color: #198754;
+                            padding: 10px 20px;
+                            margin-block: 10px;
+                            color: #fff;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+    }
+
+    .px-20 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}

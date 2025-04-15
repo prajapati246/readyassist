@@ -1,0 +1,180 @@
+.subscriptions {
+    width: 100%;
+    position: relative;
+    top: 70px;
+
+    #subscriptions_home {
+        height: 100%;
+        padding: 50px 0;
+
+
+        .planhead_section {
+            max-width: 1200px;
+
+            .home_head_section {
+                display: flex;
+                justify-content: space-between;
+
+                .head_text_section {
+                    width: 50%;
+                    display: flex;
+                    gap: 15px;
+                    flex-direction: column;
+
+                    .head_text {
+                        font-size: 36px;
+                        font-weight: 600;
+
+                    }
+
+                    .head_text_sub {
+                        display: flex;
+                        gap: 5px;
+                        font-weight: 400;
+                        font-size: 12px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        color: #b5b5b5;
+                    }
+                }
+
+                .carbike_nav_section {
+                    width: 40%;
+                    align-self: end;
+                    display: flex;
+                    justify-content: end;
+
+                    .tab-titles {
+                        display: flex;
+                        background-color: white;
+                        border-radius: 5px;
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+                        .tab-links {
+                            font-size: 12px;
+                            font-weight: 400;
+                            border-radius: 5px;
+                            padding: 10px 30px;
+                        }
+
+                        .active-link {
+                            background-color: #187649;
+                            color: #ffffff;
+                            border-radius: 5px;
+                            padding: 10px 30px;
+                        }
+                    }
+                }
+            }
+
+            .home_body_section {
+                padding: 50px 0;
+
+                .tab-contents.active-tab {
+                    display: block;
+
+                    .subscriptionPlans_card_section {
+                        display: grid;
+                        grid-template-columns: repeat(3, minmax(0, 3fr));
+                        gap: 100px;
+                        row-gap: 20px;
+
+                        .subscriptionPlans_card {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                            justify-content: space-between;
+                            padding: 20px;
+                            isolation: isolate;
+                            overflow: hidden;
+                            margin-bottom: 10px;
+                            border-radius: 10px;
+                            background-color: #ffffff;
+                            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+
+                            .subscriptionPlans_card_child {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 20px;
+
+                                .subscription_Name_parent {
+                                    display: flex;
+                                    color: #3159b6;
+                                    align-items: center;
+                                    font-size: 14px;
+                                }
+
+                                .subscription_Price_Parent {
+                                    display: flex;
+                                    font-size: 30px;
+                                    font-weight: 500;
+                                    align-items: center;
+
+                                    .sub_validity {
+                                        font-size: 12px;
+                                        color: #b5b5b5;
+                                        margin-left: 2px;
+                                        margin-top: 12px;
+                                        font-weight: 300;
+                                    }
+                                }
+
+                                .subscription_Benefits {
+                                    ul li {
+                                        display: flex;
+                                        gap: 10px;
+                                        font-size: 12px;
+                                        list-style: none;
+                                        align-items: center;
+                                    }
+
+                                    ul li::before {
+                                        content: url("../../assets/noun-sparkle-5338431.svg");
+                                        margin-top: 10px;
+                                    }
+
+                                }
+                            }
+                        }
+
+                        .subscription_button {
+                            background-color: #187649;
+                            color: #ffffff;
+                            border-radius: 10px;
+                            border: none;
+                            width: 100%;
+                            height: 50px;
+                            cursor: pointer;
+                            padding: 10px 20px;
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .tab-contents {
+                    display: none;
+                    animation: slideLeft 1s ease forwards;
+                }
+
+                @keyframes slideLeft {
+                    0% {
+                        transform: translateX(100px);
+                        opacity: 0;
+                    }
+
+                    100% {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .mx-auto {
+            margin-inline: auto;
+        }
+    }
+}
